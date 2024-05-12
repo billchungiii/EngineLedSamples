@@ -128,6 +128,7 @@ namespace EngineLedSample001
                             var cylinder = Cylinders.FirstOrDefault(c => $"{Cylinder}{c.CylinderNumber}" == step);
                             if (cylinder != null)
                             {
+                                // 簡單變化可以用 cylinder.IsOn = true
                                 cylinder.IsOn = null;  
                                 await Task.Delay(500);
                             }
